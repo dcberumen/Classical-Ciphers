@@ -39,7 +39,5 @@ To compile, simply, type ''make'' at the terminal (without the quotes).
     extra creadit:No
 
 -extra information
-    all ciphers were tested on the included text file in.txt and 3lpigs.txt
     the playfair adds an "X" when needed
     the RowTransposition adds "X" when needed when decrypt the appended "X" if needed are at the end
-    the out file currently contains this encryption ./cipher -VIG -e hungrywolf 3lpigs.txt out.txt
