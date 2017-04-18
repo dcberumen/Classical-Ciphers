@@ -1,0 +1,45 @@
+To compile, simply, type ''make'' at the terminal (without the quotes).
+
+– Names and email addresses of all partners.
+    Name/email: Daniel Berumen - dcberumen@csu.fullerton.edu
+
+– The programming language you use (e.g. C++, Java, Python)
+    programming language: C++
+
+– How to execute your program.
+    ./cipher <cipher> <encrypt/decrypt> <key> <readfile> <outfile>
+
+    <cipher>:
+        -CES: Caesar cipher
+        -PLF: Playfair cipher
+        -RFC: Railfence cipher
+        -RTS: RowTransposition cipher
+        -VIG: Vigenere cipher
+
+    <encrypt/decrypt>
+        -e: encrypt
+        -E: encrypt
+        -d: decrypt
+        -D: decrypt
+
+    <key>
+        Caesar: <int>
+        Playfair: <string>
+        Railfence: <int>
+        RowTransposition: <string int>  ex. " 2 1 4 3 6 5": Numbers can only appear once and n > 0 string needs ""
+        Vigenere: <string>
+
+    <readfile>
+        file to be read and encrypt/decrypt assumed .txt
+
+    <outfile>
+        filer to write encrypt/decrypt text assumed .txt
+
+– Whether you implemented the extra credit.
+    extra creadit:No
+
+-extra information
+    all ciphers were tested on the included text file in.txt and 3lpigs.txt
+    the playfair adds an "X" when needed
+    the RowTransposition adds "X" when needed when decrypt the appended "X" if needed are at the end
+    the out file currently contains this encryption ./cipher -VIG -e hungrywolf 3lpigs.txt out.txt
